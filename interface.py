@@ -22,7 +22,7 @@ def task():
     files = glob.glob("./image/*.jpg")
 
     if len(files) == 0:
-        img = ImageTk.PhotoImage(Image.open("./image/default/ka13.jpg")) 
+        img = ImageTk.PhotoImage(Image.open("./image/default/welcome.png")) 
         panel.config(image = img)
         panel.image = img
 
@@ -31,7 +31,7 @@ def task():
         
         if last_image == file:
             if counter == 2:
-                img = ImageTk.PhotoImage(Image.open("./image/default/ka13.jpg")) 
+                img = ImageTk.PhotoImage(Image.open("./image/default/welcome.png")) 
                 panel.config(image = img)
                 panel.image = img
                 counter = 0
